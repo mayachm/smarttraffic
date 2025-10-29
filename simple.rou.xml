@@ -1,0 +1,24 @@
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+
+    <!-- Vehicle types -->
+    <vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="5" maxSpeed="16.67" />
+
+    <!-- Flows for rows (A→D) -->
+    <flow id="flow_A0B0" type="car" from="A0B0" to="A3B3" begin="0" end="500" period="2"/>
+    <flow id="flow_A1B1" type="car" from="A1B1" to="D1C1" begin="0" end="500" period="2"/>
+    <flow id="flow_A2B2" type="car" from="A2B2" to="B2C2" begin="0" end="500" period="2"/>
+    <flow id="flow_A3B3" type="car" from="A3B3" to="C3D3" begin="0" end="500" period="2"/>
+
+    <!-- Flows for columns (B→C→D) -->
+    <flow id="flow_B0A0" type="car" from="B0A0" to="D0C0" begin="0" end="500" period="2"/>
+    <flow id="flow_B1A1" type="car" from="B1A1" to="C1D1" begin="0" end="500" period="2"/>
+    <flow id="flow_B2A2" type="car" from="B2A2" to="D2C2" begin="0" end="500" period="2"/>
+    <flow id="flow_B3A3" type="car" from="B3A3" to="C3D3" begin="0" end="500" period="2"/>
+
+    <!-- Flows for diagonals -->
+    <flow id="flow_C0D0" type="car" from="C0D0" to="A0B0" begin="0" end="500" period="3"/>
+    <flow id="flow_C1D1" type="car" from="C1D1" to="B1A1" begin="0" end="500" period="3"/>
+    <flow id="flow_C2D2" type="car" from="C2D2" to="A2B2" begin="0" end="500" period="3"/>
+    <flow id="flow_C3D3" type="car" from="C3D3" to="A3B3" begin="0" end="500" period="3"/>
+
+</routes>
