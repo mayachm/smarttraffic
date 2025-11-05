@@ -2,6 +2,7 @@
 # SmartTraffic RL Project
 
 This project trains and tests a traffic-light RL agent using SUMO.
+In regions like the UAE, where rapid urban growth and heavy peak-hour congestion strain intersections, this project simulates a scalable RL-based solution across 16 junctions to explore how smarter signal control could ease traffic flow and improve mobility in dense city environments.
 
 ## Requirements
 
